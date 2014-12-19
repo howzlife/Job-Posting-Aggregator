@@ -1,0 +1,8 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+This is a rails repository to create the front end of the job posting aggregator, 2014 end of year student project at the University of Ottawa. Information will be added as we go forward. 
+
+It is a very simple application - the index page will allow a user to submit a query, which will query a database and return statistics about job postings, that were provided by a separate component. 

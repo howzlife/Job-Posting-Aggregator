@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @job_posting.keyword %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @job_posting.city %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @job_posting.province %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @job_posting.country %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @job_posting.company %>
+</p>
+
+<%= link_to 'Edit', edit_job_posting_path(@job_posting) %> |
+<%= link_to 'Back', job_postings_path %>
