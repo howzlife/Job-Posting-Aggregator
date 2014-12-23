@@ -6,6 +6,7 @@ class CreateJobPostings < ActiveRecord::Migration
       t.string :province
       t.string :country
       t.string :company
+      t.string :posting_id
 
       t.timestamps
     end
