@@ -18,7 +18,7 @@ class JobPostingsControllerTest < ActionController::TestCase
 
   test "should create job_posting" do
     assert_difference('JobPosting.count') do
-      post :create, job_posting: { city: @job_posting.city, company: @job_posting.company, country: @job_posting.country, keyword: @job_posting.keyword, province: @job_posting.province }
+      post :create, job_posting: { city: @job_posting.city, company: @job_posting.company, country: @job_posting.country, job_ID: @job_posting.job_ID, keyword: @job_posting.keyword, province: @job_posting.province }
     end
 
     assert_redirected_to job_posting_path(assigns(:job_posting))
@@ -35,7 +35,7 @@ class JobPostingsControllerTest < ActionController::TestCase
   end
 
   test "should update job_posting" do
-    patch :update, id: @job_posting, job_posting: { city: @job_posting.city, company: @job_posting.company, country: @job_posting.country, keyword: @job_posting.keyword, province: @job_posting.province }
+    patch :update, id: @job_posting, job_posting: { city: @job_posting.city, company: @job_posting.company, country: @job_posting.country, job_ID: @job_posting.job_ID, keyword: @job_posting.keyword, province: @job_posting.province }
     assert_redirected_to job_posting_path(assigns(:job_posting))
   end
 

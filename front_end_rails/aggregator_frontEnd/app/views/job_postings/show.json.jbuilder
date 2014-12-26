@@ -1,1 +1,1 @@
-json.extract! @job_posting, :id, :keyword, :city, :province, :country, :company, :created_at, :updated_at
+json.extract! @job_posting, :id, :job_ID, :keyword, :city, :province, :country, :company, :created_at, :updated_at

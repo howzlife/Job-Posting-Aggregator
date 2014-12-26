@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141219214428) do
+ActiveRecord::Schema.define(version: 20141223202730) do
 
   create_table "job_postings", force: true do |t|
+    t.string   "job_ID"
     t.string   "keyword"
     t.string   "city"
     t.string   "province"
