@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'main_page/job_ID:string'
+
+  get 'main_page/keyword:string'
+
+  get 'main_page/city:string'
+
+  get 'main_page/province:string'
+
+  get 'main_page/country:string'
+
+  get 'main_page/company:string'
+
   resources :job_postings
 
   # The priority is based upon order of creation: first created -> highest priority.
