@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141223202730) do
+ActiveRecord::Schema.define(version: 20150103064531) do
 
   create_table "job_postings", force: true do |t|
     t.string   "job_ID"
@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(version: 20141223202730) do
     t.string   "province"
     t.string   "country"
     t.string   "company"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "queries", force: true do |t|
+    t.string   "value"
+    t.text     "arguments"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
