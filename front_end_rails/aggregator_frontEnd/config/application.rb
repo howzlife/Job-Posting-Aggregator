@@ -1,13 +1,10 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require 'jquery-rails'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-
-
-Bundler.require(*Rails.groups(:assets => %w(development test)))
+Bundler.require(*Rails.groups)
 
 module AggregatorFrontend
   class Application < Rails::Application
@@ -22,9 +19,5 @@ module AggregatorFrontend
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
-    # For Foundation 5
-    config.assets.precompile += %w( vendor/modernizr )
-
   end
 end
